@@ -1,16 +1,16 @@
 package MockTest2PPT;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class pptTwo{
     public static void main(String[] args) {
-       int num =10;
-       int series =0;
+       int n = 10, firstTerm = 0, secondTerm = 1;
+        System.out.println("Fibonacci Series till : ");
 
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(firstTerm + ", ");
 
-       for(int i =0;i<=num;i++){
-           
-           System.out.println(series +=  i );
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
        }
 
     }
